@@ -1,0 +1,54 @@
+{
+    "name": "leafs/aloe",
+    "version": "4.4",
+    "description": "Overpowered command line tool for your leaf apps.",
+    "keywords": [
+        "cli",
+        "console",
+        "bash",
+        "leaf",
+        "php"
+    ],
+    "homepage": "https://leafphp.dev/docs/mvc/console.html",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Darko",
+            "email": "mickdd22@gmail.com",
+            "homepage": "https://mychi.netlify.app",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Aloe\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "illuminate/support": "*",
+        "leafs/fs": "*",
+        "leafs/mvc-core": "*",
+        "psy/psysh": "^0.10.9|^0.11",
+        "symfony/console": "^5.0|^6.0",
+        "symfony/process": "^5.0|^6.0"
+    },
+    "require-dev": {
+        "leafs/leaf": "*",
+        "leafs/alchemy": "*",
+        "friendsofphp/php-cs-fixer": "^3.66"
+    },
+    "scripts": {
+        "alchemy": "./vendor/bin/alchemy setup",
+        "test": "./vendor/bin/alchemy setup --test",
+        "lint": "./vendor/bin/alchemy setup --lint",
+        "actions": "./vendor/bin/alchemy setup --actions"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

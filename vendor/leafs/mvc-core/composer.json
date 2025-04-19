@@ -1,0 +1,48 @@
+{
+    "name": "leafs/mvc-core",
+    "description": "Core files specific to MVC based leaf frameworks like Leaf MVC and Leaf API.",
+    "keywords": [
+        "microframework",
+        "rest",
+        "mvc",
+        "leaf",
+        "php",
+        "framework"
+    ],
+    "homepage": "https://leafphp.dev/docs/mvc/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Darko",
+            "email": "mickdd22@gmail.com",
+            "homepage": "https://mychi.netlify.app",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Leaf\\": "src"
+        },
+        "files": [
+            "src/globals/bootstrap.php",
+            "src/globals/config.php",
+            "src/globals/paths.php",
+            "src/globals/functions.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "leafs/leaf": "*",
+        "doctrine/dbal": "^3.2",
+        "vlucas/phpdotenv": "^5.4",
+        "illuminate/database": "^8.75",
+        "illuminate/events": "^8.75",
+        "symfony/yaml": "^6.4",
+        "leafs/db": "*"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.24"
+    }
+}

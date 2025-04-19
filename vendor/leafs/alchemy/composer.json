@@ -1,0 +1,49 @@
+{
+	"name": "leafs/alchemy",
+	"version": "4.0",
+	"description": "Integrated testing/style fixing tool for your PHP apps",
+	"homepage": "https://leafphp.dev/docs/tooling/testing",
+	"keywords": [
+		"leaf",
+		"php",
+		"testing",
+		"test",
+		"linting",
+		"actions"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Michael Darko",
+			"email": "mickdd22@gmail.com",
+			"homepage": "https://mychi.netlify.app",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"ext-json": "*",
+		"leafs/fs": "*",
+		"symfony/console": "*",
+		"symfony/process": "*",
+		"symfony/yaml": "*"
+	},
+	"bin": [
+		"bin/alchemy"
+	],
+	"autoload": {
+		"psr-4": {
+			"Leaf\\Alchemy\\": "src/"
+		},
+		"files": [
+			"src/functions.php"
+		]
+	},
+	"config": {
+		"sort-packages": true,
+		"allow-plugins": {
+			"pestphp/pest-plugin": true
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
